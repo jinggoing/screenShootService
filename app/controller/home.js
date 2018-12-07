@@ -5,7 +5,7 @@ const Controller = require('egg').Controller;
 
 async function init() {
   console.log('init');
-  global.browser = await puppeteer.launch();
+  global.browser = await puppeteer.launch({ args: [ '--no-sandbox', '--disable-setuid-sandbox' ] });
   global.page = await global.browser.newPage();
 }
 init();
@@ -18,7 +18,7 @@ class HomeController extends Controller {
     const paramsStr = queryString.stringify(params);
     // console.log(new Date().getMilliseconds() + 'this.ctx.query', params);
     if (global.browser === undefined) {
-      global.browser = await puppeteer.launch();
+      global.browser = await puppeteer.launch({ args: [ '--no-sandbox', '--disable-setuid-sandbox' ] });
     } else {
       if (global.page === undefined) {
         global.page = await global.browser.newPage();
