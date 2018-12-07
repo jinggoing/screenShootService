@@ -1,0 +1,126 @@
+
+.news-view {
+    .item{
+        font-size: 20px;
+    }
+}
+
+.swiper-card{
+    position: relative;
+    font-size: .2rem;
+    color: #3D4C65;
+    width: 96%;
+    padding: 2%;
+    .card-title{
+        background-image: url(../assets/poi_icon_slices/poi_icon@2x.png);
+        background-size: .15rem;
+        background-repeat: no-repeat;
+        background-position: 0rem .05rem;
+        padding-bottom: .2rem;
+        padding-left: .2rem;
+        text-align: left;
+        font-weight: bold;
+        color:#ffffff;
+    }
+    .card-body{
+        //width: 88%;
+        height: 1.5rem;
+        border-radius: .12rem;
+        padding: .3rem;
+        padding-bottom: .6rem;
+        display: flex;
+        justify-content: space-between;
+        background:rgba(255,255,255,1);
+        .left{
+            width: 4rem;
+            .store{
+                display: flex;
+                .logo{
+                    width:.5rem;
+                    height: .5rem;
+                    img{
+                        width: .4rem;
+                        height: .4rem;
+                        border-radius: .2rem;
+                    }
+                }
+                .name{
+                    font-weight: 400;
+                    line-height: .4rem;
+                    margin-left: .08rem;
+                    max-width: 3rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .msg{
+                margin-top: .1rem;
+                display: flex;
+                .pic{
+                    text-align: left;
+                    img{
+                        width: .8rem;
+                        height: .8rem;
+                        border-radius: .08rem;
+                    }
+                }
+                .text{
+                    margin-top: .05rem;
+                    margin-left: .12rem;
+                    .title{
+                        text-align: left;
+                        font-weight:bold;
+                        font-size: .26rem;
+                        width: 2.66rem;
+                        color: #3D4C65;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .price{
+                        display: flex;
+                        .default-price{
+                            font-weight: bold;
+                            font-size: .24rem;
+                            color: #D36F6F;
+                        }
+                        .origin-price{
+                            margin-left: .3rem;
+                            font-weight: 400;
+                            line-height: .4rem;
+                            color: #3D4C65;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+            .tips{
+                position: relative;
+                text-align: left;
+                padding-left: .3rem;
+                margin-top: .1rem;
+                img{
+                    position: absolute;
+                    width: .2rem;
+                    height: .2rem;
+                    left: 0;
+                    top: .05rem;
+                }
+            }
+        }
+        .right{
+            width: 1.8rem;
+            text-align: right;
+            img{
+                width: 1.46rem;
+                height: 1.46rem;
+            }
+            .canvas{
+                width: 1.48rem !important;
+                height: 1.48rem !important;
+            }
+        }
+    }
+    
+}

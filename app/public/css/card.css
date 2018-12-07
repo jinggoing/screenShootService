@@ -1,0 +1,143 @@
+
+.swiper-card{
+    position: relative;
+    font-size: .2rem;
+    color: #3d4c65;
+    width: 96%;
+    padding: 2%
+}
+
+.swiper-card .card-title{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAmCAYAAADX7PtfAAADFklEQVRYR7WXWaiNURTHf3/zkOHBEBkSKXPohkQZnpAX4cUQEkVR7oPhAQ94QK6iSGYvlBfhyVAkZJ5LJNOV4cGQ4ZqW1u37dBzfsK9zrDp1Ot9/rd/e+1tr7XVEjplZPWB09BkBdALaRm6vgWfAWeCUfyT9zAqptIdm1hiYCywGuuctLHr+EKgCdkiqSfJJBJpZX+AAMCAQVCy7AUyTdLv4wV9AM5sIHASa/CMsdvsCTJV0pDDOH0AzmwAcBhqVCIvdvwKTJB2Nf/gNNLNewBWgaZlgcZjPwGBJ9/yHWqCZNQQuAIPKDIvDXQWGSvoWAxcAW/4TLA67UNJWmVkD4D7QLQDour2AZ6GbZ/FMoGeA7yPXOXA88PulZjhuAJZJ+l6oiRa8DqgMgE5w4KaouLP0+yT5TlLNzHznM3KgVQ687FmUIfwBdJFUnQPsCDwB6mforjjwOeDiNLstqV/AcXm23wK8S6VZtQO9I3jfTLOLkoYGAr20hmRoaxzoHb9Nhugt0M5rKOdIvZZfAa0zdG8ceD2gSc+WtDsHOAvYlXMS1x24J6qlLO07YJSka0kiMxsInAZa5QD3OnAycCjgHX0C1gA7Jb10vZm1B+YAK4BmATGmOLAF8DRgdXE8v9FrgYADfSIIMT+lznEvXQmsCvEqQbNK0uoY2BJ4UDCrlBA30dUroYek94X34XRgX7lJUbwZkvb79+Ib/wQwpszQk5LGxjGLgT2Am2W89f227y/JX1etJQ1Ry6P0L8dGV0haWxgoCegtygu8T4nEO8DA4paYNpcOB87UocaK1+a1OlLSueIHWZP3NmDeP+5yu6T5Sb5ZQO/6d4EOdYS+AHpL8lvmL0sFutLMpkRTeF2YPm2n9uZMYAQ9BowLJB6X5ENZqoUAuwKecc1zoB89syU9LgkY7XIJ4GNillVK2ph3Erk7jIA+iV3yukoJ6HVbIcknvEwLAkbQCuB8whjokGGSfEG5FgyMoP7vdlFR1M2S/F9ykNUV6NOBJ1DnKLpPCp4oH4JoSc07z9HMvMeu9zIFlkry4TfYfgGUsQhYApTnuwAAAABJRU5ErkJggg==);
+    background-size: .15rem;
+    background-repeat: no-repeat;
+    background-position: 0 .05rem;
+    padding-bottom: .2rem;
+    padding-left: .2rem;
+    text-align: left;
+    font-weight: 700;
+    color: #fff
+}
+
+.swiper-card .card-body{
+    height: 1.5rem;
+    border-radius: .12rem;
+    padding: .3rem;
+    padding-bottom: .6rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: #fff
+}
+
+.swiper-card .card-body .left{
+    width: 4rem
+}
+
+.swiper-card .card-body .left .store{
+    display: -ms-flexbox;
+    display: flex
+}
+
+.swiper-card .card-body .left .store .logo{
+    width: .5rem;
+    height: .5rem
+}
+
+.swiper-card .card-body .left .store .logo img{
+    width: .4rem;
+    height: .4rem;
+    border-radius: .2rem
+}
+
+.swiper-card .card-body .left .store .name{
+    font-weight: 400;
+    line-height: .4rem;
+    margin-left: .08rem;
+    max-width: 3.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.swiper-card .card-body .left .msg{
+    margin-top: .1rem;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.swiper-card .card-body .left .msg .pic{
+    text-align: left
+}
+
+.swiper-card .card-body .left .msg .pic img{
+    width: .8rem;
+    height: .8rem;
+    border-radius: .08rem
+}
+
+.swiper-card .card-body .left .msg .text{
+    margin-top: .05rem;
+    margin-left: .12rem
+}
+
+.swiper-card .card-body .left .msg .text .title{
+    text-align: left;
+    font-weight: 700;
+    font-size: .26rem;
+    width: 3rem;
+    color: #3d4c65;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.swiper-card .card-body .left .msg .text .price{
+    display: -ms-flexbox;
+    display: flex
+}
+
+.swiper-card .card-body .left .msg .text .price .default-price{
+    font-weight: 700;
+    font-size: .24rem;
+    color: #d36f6f
+}
+
+.swiper-card .card-body .left .msg .text .price .origin-price{
+    margin-left: .3rem;
+    font-weight: 400;
+    line-height: .4rem;
+    color: #3d4c65;
+    text-decoration: line-through
+}
+
+.swiper-card .card-body .left .tips{
+    position: relative;
+    text-align: left;
+    padding-left: .3rem;
+    margin-top: .1rem
+}
+
+.swiper-card .card-body .left .tips img{
+    position: absolute;
+    width: .2rem;
+    height: .2rem;
+    left: 0;
+    top: .05rem
+}
+
+.swiper-card .card-body .right{
+    width: 1.8rem;
+    text-align: right
+}
+
+.swiper-card .card-body .right img{
+    width: 1.46rem;
+    height: 1.46rem
+}
+
+.swiper-card .card-body .right .canvas{
+    width: 1.48rem !important;
+    height: 1.48rem !important
+}
