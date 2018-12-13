@@ -4,15 +4,15 @@ const Controller = require('egg').Controller;
 class GroupBuyingCardController extends Controller {
   async card() {
     console.log(this.ctx.query);
-    const res = await this.ctx.service.card.groupBuyingByPoi(this.ctx.query);
+    const res = this.ctx.query;
     const cardObj = {
       title: res.title,
-      poiTitle: res.poi_title,
-      poiWapUrl: res.poi_wap_url,
-      originPrice: res.origin_price,
+      poiTitle: res.poiTitle,
+      poiWapUrl: res.poiWapUrl,
+      originPrice: res.originPrice,
       price: res.price,
       name: res.name,
-      poiImg: res.poi_img,
+      poiImg: res.poiImg,
       pic: res.pic,
     };
     const data = { cardObj };
