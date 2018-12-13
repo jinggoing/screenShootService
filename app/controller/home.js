@@ -26,9 +26,13 @@ class HomeController extends Controller {
     }
 
     try {
+      let width = this.ctx.query.w;
+      if (width === undefined || !isNaN(width)) {
+        width = 600;
+      }
       global.page.setViewport({
-        width: this.ctx.query.w * 1,
-        height: parseInt(this.ctx.query.w * 0.51) });
+        width: width * 1,
+        height: parseInt(width * 0.51) });
       await global.page.goto(`http://127.0.0.1:${cluster.listen.port}/card?${paramsStr}#/`);
       // 等待页面二维码生成完毕（页面加载最后一步）5秒超时
       await global.page.waitForSelector('#qrcode', { timeout: 3000 });
