@@ -27,7 +27,7 @@ class HomeController extends Controller {
 
     try {
       let width = this.ctx.query.w
-      if (width === undefined || !isNaN(width)) {
+      if (width === undefined || isNaN(width)) {
         width = 600
       }
       global.page.setViewport({
